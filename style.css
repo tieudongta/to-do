@@ -1,0 +1,251 @@
+body {
+  font-family: sans-serif;
+  background-color: #f4f4f4;
+  padding: 2rem;
+}
+body.dark{
+	background-color: #1e1e1e;
+	color: #f0f0f0;
+}
+body.dark .container{
+	background: #2c2c2c;
+}
+body.dark input, body.dark button, body.dark li{
+	background-color: #3a3a3a;
+	color: #f0f0f0;
+	border-collapse" #555;
+}
+body.dark .delete-btn{
+	background: #ff5555;
+}
+body.dark .filters button.active{
+	background-color: #0d6efd;
+}
+.container {
+  max-width: 400px;
+  margin: auto;
+  background: white;
+  padding: 1.5rem;
+  border-radius: 10px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+form {
+  display: flex;
+  gap: 0.5rem;
+}
+
+input {
+  flex: 1;
+  padding: 0.5rem;
+}
+
+button {
+  padding: 0.5rem 1rem;
+}
+
+ul {
+  list-style: none;
+  padding: 0;
+  margin-top: 1rem;
+}
+
+li {
+  background: #eee;
+  margin-bottom: 0.5rem;
+  padding: 0.5rem;
+  border-radius: 5px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+li.completed {
+  text-decoration: line-through;
+  color: #888;
+}
+
+.delete-btn {
+  background: red;
+  color: white;
+  border: none;
+  padding: 0.3rem 0.6rem;
+  border-radius: 3px;
+  cursor: pointer;
+}
+.filters{
+	margin-top: 1rem;
+	display:flex;
+	justify-content: center;
+	gap: 0.5rem;
+}
+.filters button{
+	padding: 0.3rem 0.6rem;
+	border: 1px solid #ccc;
+	background-color: white;
+	cursor: pointer;
+}
+.filters button.active {
+	background-color: #007bff;
+	color: white;
+}
+li span[contenteditable="true"]:focus {
+  outline: 2px dashed #007bff;
+  background-color: #eef;
+}
+
+
+body.dark .due-date {
+  color: #aaa;
+}
+.due-date {
+  display: block;
+  font-size: 0.75rem;
+  color: #666;
+  margin-top: 2px;
+}
+.overdue {
+  color: red;
+  font-weight: bold;
+}
+
+.due-today {
+  color: orange;
+  font-weight: bold;
+}
+li.drag-over {
+  border: 2px dashed #007bff;
+  background-color: #eef;
+}
+
+li.dragging {
+  opacity: 0.5;
+}
+#search-input {
+  width: 100%;
+  padding: 0.5rem;
+  margin: 1rem 0 0.5rem;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+body.dark #search-input {
+  background-color: #3a3a3a;
+  color: #f0f0f0;
+  border-color: #555;
+}
+#sort-select {
+  width: 100%;
+  padding: 0.5rem;
+  margin-bottom: 1rem;
+  border-radius: 4px;
+  border: 1px solid #ccc;
+}
+body.dark #sort-select {
+  background-color: #3a3a3a;
+  color: #f0f0f0;
+  border-color: #555;
+}
+.bulk-actions {
+  margin-top: 1rem;
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+}
+
+.bulk-actions button {
+  padding: 0.4rem 1rem;
+  border-radius: 4px;
+  background-color: #f0f0f0;
+  border: 1px solid #ccc;
+  cursor: pointer;
+}
+body.dark .bulk-actions button {
+  background-color: #3a3a3a;
+  color: #fff;
+  border-color: #555;
+}
+li {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0.6rem;
+  border-bottom: 1px solid #ddd;
+  gap: 1rem;
+}
+
+.task-left {
+  display: flex;
+  align-items: center;
+  flex: 1;
+  gap: 0.6rem;
+}
+
+.select-task {
+  flex-shrink: 0;
+}
+
+.task-text {
+  display: flex;
+  flex-direction: column;
+  word-break: break-word;
+  flex: 1;
+}
+
+.task-actions {
+  display: flex;
+  gap: 0.3rem;
+}
+
+li {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0.6rem;
+  border-bottom: 1px solid #ddd;
+  gap: 1rem;
+}
+
+.task-left {
+  display: flex;
+  align-items: center;
+  flex: 1;
+  gap: 0.6rem;
+}
+
+.select-task {
+  flex-shrink: 0;
+  transform: scale(1.2); /* optional: larger checkbox */
+}
+
+.task-text {
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+  word-break: break-word;
+}
+
+.task-actions {
+  display: flex;
+  flex-shrink: 0;
+  gap: 0.3rem;
+}
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 1rem;
+}
+
+#theme-toggle {
+  padding: 0.4rem 0.8rem;
+  font-size: 0.9rem;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+  cursor: pointer;
+}
+
+body.dark #theme-toggle {
+  background-color: #3a3a3a;
+  color: #f0f0f0;
+  border-color: #555;
+}
